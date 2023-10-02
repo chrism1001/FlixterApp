@@ -52,8 +52,7 @@ class MovieFragment: Fragment(), OnListFragmentInteractionListener {
                 ) {
                     progressBar.hide()
 
-                    val resultsJSON: JSONObject = json.jsonObject.get("results") as JSONObject
-                    val moviesRawJSON: String = resultsJSON.toString()
+                    val moviesRawJSON: String = json.jsonObject.get("results").toString()
                     val gson = Gson()
                     val arrayMovieType = object: TypeToken<List<Movie>>() {}.type
                     val models: List<Movie> = gson.fromJson(moviesRawJSON, arrayMovieType)
