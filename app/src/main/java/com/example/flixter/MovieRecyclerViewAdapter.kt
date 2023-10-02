@@ -4,10 +4,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class MoveRecyclerViewAdapter (
+class MovieRecyclerViewAdapter (
     private val books: List<Movie>,
     private val mListener: OnListFragmentInteractionListener?
-) : RecyclerView.Adapter<MoveRecyclerViewAdapter.MovieViewHolder>() {
+) : RecyclerView.Adapter<MovieRecyclerViewAdapter.MovieViewHolder>() {
 
     inner class MovieViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {
         var mItem: Movie? = null
@@ -16,11 +16,11 @@ class MoveRecyclerViewAdapter (
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): MoveRecyclerViewAdapter.MovieViewHolder {
+    ): MovieRecyclerViewAdapter.MovieViewHolder {
         TODO("Not yet implemented")
     }
 
-    override fun onBindViewHolder(holder: MoveRecyclerViewAdapter.MovieViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MovieRecyclerViewAdapter.MovieViewHolder, position: Int) {
         TODO("Not yet implemented")
     }
 
