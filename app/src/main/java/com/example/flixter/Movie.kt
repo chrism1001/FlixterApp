@@ -9,7 +9,7 @@ class Movie {
 
     @JvmField
     @SerializedName("overview")
-    var overview: String? = null
+    var description: String? = null
 
     @JvmField
     @SerializedName("poster_path")
